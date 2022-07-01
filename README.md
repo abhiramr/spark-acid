@@ -325,8 +325,8 @@ _NB: Hive ACID V2 is supported in Hive 3.0.0 onwards and for that hive Metastore
 
 1. First, build the dependencies and publish it to local. The *shaded-dependencies* sub-project is an sbt project to create the shaded hive metastore and hive exec jars combined into a fat jar `spark-acid-shaded-dependencies`. This is required due to our dependency on Hive 3 for Hive ACID, and Spark currently only supports Hive 1.2. To compile and publish shaded dependencies jar:
 
-    cd shaded-dependencies
-    sbt clean publishLocal
+    - cd shaded-dependencies
+    - sbt clean publishLocal
 
 2. Next, build the main project:
 
